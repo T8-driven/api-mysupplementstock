@@ -15,6 +15,7 @@ const router = Router();
 router.post("/sign-up", userShemaValidation, signUp);
 
 router.use(authRoutesValidation);
+
 router.get("/users", findAllUsers);
 router.put("/users/:id", updateUserShemaValidation, updateUser);
 
