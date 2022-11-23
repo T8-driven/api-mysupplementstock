@@ -9,3 +9,13 @@
 - Apenas os administradores podem inserir novos itens
 - Funcionários comuns podem apenas ver o estoque
 - Administradores podem tornar qualquer funcionário um adm também.
+
+## Tarefas
+
+### develop-thi
+
+- Tudo relacionado a usuário
+
+### develop-ju
+
+- tudo relacionado aos suplementos
