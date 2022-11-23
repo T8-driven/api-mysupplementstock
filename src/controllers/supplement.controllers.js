@@ -12,4 +12,16 @@ export async function createSupplement(req, res) {
   }
 }
 
-export async function findAllSupplement(req, res) {}
+export async function findAllSupplement(req, res) {
+  try {
+    const supplements = await supplementCollection
+      .find({})
+      .sort({ _id: -1 })
+      .toArray();
+
+    res.send({ supplements });
+  } catch (err) {
+    console.log(err);
+    res.sendStatus(500);
+  }
+}
